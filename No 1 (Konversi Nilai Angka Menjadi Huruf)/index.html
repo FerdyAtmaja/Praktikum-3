@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Konversi Nilai</title>
+  </head>
+  <script>
+    document.write("Dimodifikasi terakhir pada " + document.lastModified);
+
+    function konversi(){
+        var bil1 = parseFloat(document.nilai.bil1.value);
+        if (bil1>=0 && bil1<=40) hasil="E";
+        else if (bil1>=41 && bil1<=55) hasil="D";
+        else if (bil1>=56 && bil1<=60) hasil="C";
+        else if (bil1>=61 && bil1<=65) hasil="BC";
+        else if (bil1>=66 && bil1<=70) hasil="B";
+        else if (bil1>=71 && bil1<=80) hasil="AB";
+        else if (bil1>=81 && bil1<=100) hasil="A";
+        else alert("Masukkan nilai dengan rentang 0 - 100");
+        document.nilai.hasil.value = hasil;
+    }
+  </script>
+
+  <body>
+    <h1>Konversi Nilai Angka Menjadi Huruf</h1>
+    <form name="nilai">
+      <p>Masukkan Nilai (0-100) : <input type="text" name="bil1" size="10" /></p>
+      <input type="BUTTON" value="Konversi" onclick="konversi()" />
+      <p>Hasil : <input type="text" name="hasil" size="28" /></p>
+  </body>
+</html>
