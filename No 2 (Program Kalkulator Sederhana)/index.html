@@ -10,27 +10,43 @@
     function tambah() {
       var bil1 = parseFloat(document.jumlah.bil1.value);
       var bil2 = parseFloat(document.jumlah.bil2.value);
-      var hasil = bil1 + bil2;
-      document.jumlah.hasil.value = hasil;
+      if (isNaN(bil1) == false && isNaN(bil2) == false) {
+        var hasil = bil1 + bil2;
+        document.jumlah.hasil.value = hasil;
+      } else {
+        alert("Inputkan angka !");
+      }
     }
 
     function kurang(bil1, bil2) {
       var bil1 = parseFloat(document.jumlah.bil1.value);
       var bil2 = parseFloat(document.jumlah.bil2.value);
-      var hasil = bil1 - bil2;
-      document.jumlah.hasil.value = hasil;
+      if (isNaN(bil1) == false && isNaN(bil2) == false) {
+        var hasil = bil1 - bil2;
+        document.jumlah.hasil.value = hasil;
+      } else {
+        alert("Inputkan angka !");
+      }
     }
     function kali(bil1, bil2) {
       var bil1 = parseFloat(document.jumlah.bil1.value);
       var bil2 = parseFloat(document.jumlah.bil2.value);
-      var hasil = bil1 * bil2;
-      document.jumlah.hasil.value = hasil;
+      if (isNaN(bil1) == false && isNaN(bil2) == false) {
+        var hasil = bil1 * bil2;
+        document.jumlah.hasil.value = hasil;
+      } else {
+        alert("Inputkan angka !");
+      }
     }
     function bagi(bil1, bil2) {
       var bil1 = parseFloat(document.jumlah.bil1.value);
       var bil2 = parseFloat(document.jumlah.bil2.value);
-      var hasil = bil1 / bil2;
-      document.jumlah.hasil.value = hasil;
+      if (isNaN(bil1) == false && isNaN(bil2) == false) {
+        var hasil = bil1 / bil2;
+        document.jumlah.hasil.value = hasil;
+      } else {
+        alert("Inputkan angka !");
+      }
     }
   </script>
 
